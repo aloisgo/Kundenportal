@@ -76,8 +76,7 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "cf904cfe-e0e6-42a2-a17f-eb3192abd7a9",
-                "e336c65d-5eff-40d5-a9ec-d625832f72de"
+                "cf904cfe-e0e6-42a2-a17f-eb3192abd7a9"
               ],
               "containedElements": [
                 "7a1c6a67-bf99-43c1-ac24-bef401d65c03",
@@ -86,13 +85,6 @@
                 "db2618c1-803e-401b-83ea-67cef2632559",
                 "39b83273-1ed5-4422-95bb-36b98340f02a"
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1267,22 +1259,26 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "6f001292-ac32-4328-aca8-5d2c1387c141"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Data Flow"
             ],
             "id": "e336c65d-5eff-40d5-a9ec-d625832f72de",
             "source": {
-              "x": 663,
-              "y": 737
+              "cell": "7a1c6a67-bf99-43c1-ac24-bef401d65c03",
+              "port": "a89e8ae3-e29e-4d7e-8039-2c5fd2044297"
             },
             "target": {
               "cell": "db2618c1-803e-401b-83ea-67cef2632559",
               "port": "63a7a6e2-b3f8-4b4b-9642-1c52a825a020"
-            }
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": 770
+              }
+            ]
           }
         ],
         "description": "Kundenportal"
