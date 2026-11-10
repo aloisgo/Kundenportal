@@ -203,8 +203,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "d3722879-8801-423f-bd34-e3291a61bf44",
             "zIndex": -1,
+            "id": "d3722879-8801-423f-bd34-e3291a61bf44",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "LEW Company Network",
@@ -1348,51 +1348,6 @@
             "target": {
               "cell": "ce45dd66-49db-41cf-aebb-48441abb6339",
               "port": "19f7f1fb-9595-4f85-9513-709ef93b7c3f"
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
             }
           },
           {
@@ -1533,8 +1488,8 @@
                 "text": "Web\n Application"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1631,12 +1586,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "a06aa3da-1e94-48d4-99dc-af0be8d708bc",
+                  "title": "DDOS attack",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "DDOS attack",
+                  "mitigation": "Auth0 Rate limiting\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 2,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1807,51 +1784,16 @@
               "cell": "2e81cf4a-b69f-4c2b-ac35-eaba6634b32d",
               "port": "103c271b-f8bb-4403-aa56-e1fc9eab43af"
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": [
+              {
+                "x": 300,
+                "y": 430
+              },
+              {
+                "x": 320,
+                "y": 330
+              }
+            ]
           },
           {
             "position": {
@@ -1988,8 +1930,8 @@
                 "text": "App\nGateway"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2086,12 +2028,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "5a55935c-0b67-44c3-97be-a7a9c8517bb3",
+                  "title": "Get Admin permissions",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Erhöhung von Rechten",
+                  "description": "A customer could get admin permissions",
+                  "mitigation": "Authentication via Entra ID only for emploees of the company. \nRoute to admin area not public available",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -2115,6 +2079,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -2198,7 +2163,6 @@
               ]
             },
             "id": "4a914c4e-1d94-45d7-a4a4-4d5efb6ae35c",
-            "zIndex": 17,
             "data": {
               "type": "tm.Actor",
               "name": "Customer",
@@ -2232,6 +2196,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 18,
             "ports": {
               "groups": {
                 "top": {
@@ -2315,7 +2280,6 @@
               ]
             },
             "id": "a17235b5-91bf-4259-a81b-dafa0cc1dbf4",
-            "zIndex": 18,
             "data": {
               "type": "tm.Actor",
               "name": "Employee \nCustomer Service",
@@ -2327,6 +2291,123 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": -250,
+              "y": -90
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "28472762-fb38-4574-9dce-69ed2c0acefa"
+                },
+                {
+                  "group": "right",
+                  "id": "2a9d2c86-379f-421d-8506-cabae3d26eb9"
+                },
+                {
+                  "group": "bottom",
+                  "id": "16917281-8c28-42db-aa2b-5ce45ca688e8"
+                },
+                {
+                  "group": "left",
+                  "id": "46ff4d7d-3b83-4e24-8f62-fc823ba25063"
+                }
+              ]
+            },
+            "id": "ce0d1ae2-65ce-450f-8c5b-5a780b3d471e",
+            "zIndex": 19,
+            "data": {
+              "type": "tm.Process",
+              "name": "Process",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
           }
         ],
         "description": "Kundenportal"
@@ -2334,6 +2415,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 2
   }
 }
